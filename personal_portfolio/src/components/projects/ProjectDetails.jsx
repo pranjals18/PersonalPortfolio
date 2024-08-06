@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import './projects.css'
-import project1 from '../../assets/Project1.png'
-import project2 from '../../assets/Project2.png'
-import project3 from '../../assets/Project3.jpg'
+import codeorbit_img from '../../assets/codeorbit.png'
+import pizzamania_img from '../../assets/pizzamania.png'
+import crypinfo_img from '../../assets/crypinfo.png'
+import alumnet_img from '../../assets/alumnet.jpg'
 
 const ProjectDetails = () => {
 
@@ -13,10 +14,15 @@ const ProjectDetails = () => {
     }
     return (
         <div className="projects__container container grid">
+
+
+
+            {/* ----------------------------------------------------- Projects ----------------------------------------------------- */}
+
             <div className="projects__content">
                 <div>
-                    <img className='project-img' src={project1} alt="" />
-                    <h3 className="projects__title">Pizza Mania</h3>
+                    <img className='project-img' src={codeorbit_img} alt="" />
+                    <h3 className="projects__title">Code Orbit</h3>
 
                 </div>
 
@@ -25,6 +31,72 @@ const ProjectDetails = () => {
                 </span>
 
                 <div className={toggleState === 1 ? "projects__modal active-modal" : "projects__modal"}>
+                    <div className="projects__modal-content">
+                        <i onClick={() => toggleTab(0)} className="uil uil-times projects__modal-close"></i>
+
+                        <h3 className="projects__modal-title">Code Orbit</h3>
+                        <p className="projects__modal-description">Collaborative Coding Platform</p>
+
+                        <ul className="projects__modal-projects grid">
+                            <li className="projects__modal-project">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__ modal-info">Tech Stack: React, CSS, Node.js, Express.js, MongoDB, Socket.io, JWT</p>
+                            </li>
+
+                            <li className="projects__modal-project">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__ modal-info">Developed a comprehensive platform to facilitate real-time collaborative coding and project management.</p>
+                            </li>
+
+                            <li className="projects__modal-project">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__ modal-info">Implemented real-time collaboration features using Socket.io, enabling multiple users to work on code simultaneously and see
+                                changes in real time.</p>
+                            </li>
+
+                            <li className="projects__modal-project">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__ modal-info">Designed and built a project management system to organize tasks, track progress.</p>
+                            </li>
+
+                            <li className="projects__modal-project">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__ modal-info">Integrated a JavaScript playground within the browser, allowing users to write, run, and test code directly.</p>
+                            </li>
+
+                        </ul>
+                        <div class="projects__buttons">
+                            <a href="https://codeorbit.vercel.app/" class="projects__button" target="_blank">
+                                <span>Demo</span>
+                                <i class="uil uil-link"></i>
+                            </a>
+                            <a href="https://github.com/PranjalShinde18/CodeTogether" class="projects__button" target="_blank">
+                                <span>Github</span>
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div className="projects__content">
+                <div>
+                    <img className='project-img' src={pizzamania_img} alt="" />
+                    <h3 className="projects__title">Pizza Mania</h3>
+
+                </div>
+
+                <span className="projects__button" onClick={() => toggleTab(2)}>View More
+                    <i className="uil uil-arrow-right projects__button-icon"></i>
+                </span>
+
+                <div className={toggleState === 2 ? "projects__modal active-modal" : "projects__modal"}>
                     <div className="projects__modal-content">
                         <i onClick={() => toggleTab(0)} className="uil uil-times projects__modal-close"></i>
 
@@ -77,18 +149,22 @@ const ProjectDetails = () => {
 
             </div>
 
+
+
+
+
             <div className="projects__content">
                 <div>
-                    <img className='project-img' src={project2} alt="" />
+                    <img className='project-img' src={crypinfo_img} alt="" />
                     <h3 className="projects__title">CrypInfo</h3>
 
                 </div>
 
-                <span className="projects__button" onClick={() => toggleTab(2)}>View More
+                <span className="projects__button" onClick={() => toggleTab(3)}>View More
                     <i className="uil uil-arrow-right projects__button-icon"></i>
                 </span>
 
-                <div className={toggleState === 2 ? "projects__modal active-modal" : "projects__modal"}>
+                <div className={toggleState === 3 ? "projects__modal active-modal" : "projects__modal"}>
                     <div className="projects__modal-content">
                         <i onClick={() => toggleTab(0)} className="uil uil-times projects__modal-close"></i>
 
@@ -138,17 +214,22 @@ const ProjectDetails = () => {
 
             </div>
 
+
+
+
+
+
             <div className="projects__content">
                 <div>
-                    <img className='project-img' src={project3} alt="" />
+                    <img className='project-img' src={alumnet_img} alt="" />
                     <h3 className="projects__title">Alumnet</h3>
                 </div>
 
-                <span className="projects__button" onClick={() => toggleTab(3)}>View More
+                <span className="projects__button" onClick={() => toggleTab(4)}>View More
                     <i className="uil uil-arrow-right projects__button-icon"></i>
                 </span>
 
-                <div className={toggleState === 3 ? "projects__modal active-modal" : "projects__modal"}>
+                <div className={toggleState === 4 ? "projects__modal active-modal" : "projects__modal"}>
                     <div className="projects__modal-content">
                         <i onClick={() => toggleTab(0)} className="uil uil-times projects__modal-close"></i>
 
