@@ -1,0 +1,128 @@
+.contact__container {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact__section {
+  background-color: var(--body-color);
+  width: 100%;
+  height: 100%;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.contact__form-heading {
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 2rem;
+}
+
+.contact__form-input,
+.contact__form-button {
+  padding: 0.8rem;
+  width: 40%;
+  outline: none;
+  margin: 1rem;
+  border: none;
+}
+
+.contact__form-input {
+  border-radius: 8px;
+}
+
+.contact__form-button {
+  cursor: pointer;
+  background-color: var(--title-color);
+  color: var(--container-color);
+  text-transform: uppercase;
+  margin: 3rem;
+  border-radius: 8px;
+}
+
+.contact__form-button:hover {
+  background-color: var(--title-color-dark);
+}
+
+.contact__aside {
+  width: 100%;
+  height: 100%;
+  background-color: var(--text-color);
+  display: grid;
+  place-items: center;
+}
+
+.contact__aside-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: white;
+  /* animation: upupdowndown 0.7s infinite linear alternate; */
+}
+
+.disableBtn {
+  cursor: not-allowed;
+}
+
+@media (max-width: 992px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__form-input,
+  .contact__form-button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__form-heading {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+  }
+
+  .contact__form-input,
+  .contact__form-button {
+    width: 60%;
+  }
+
+  .contact__form-button {
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact__form-input,
+  .contact__form-button {
+    width: 70%;
+  }
+
+  .contact__form-heading {
+    font-size: 1.2rem;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .contact__form-heading {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+
+  .contact__form-input,
+  .contact__form-button {
+    width: 80%;
+    padding: 0.6rem;
+  }
+
+  .contact__form-button {
+    margin: 1.5rem;
+  }
+}
