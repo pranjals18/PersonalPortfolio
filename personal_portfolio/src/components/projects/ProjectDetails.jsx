@@ -62,10 +62,6 @@ const ProjectDetails = () => {
 
                         </ul>
                         <div class="projects__buttons">
-                            <a href="https://codeorbit.vercel.app/" class="projects__button" target="_blank" rel="noreferrer">
-                                <span>Demo</span>
-                                <i class="uil uil-link"></i>
-                            </a>
                             <a href="https://github.com/PranjalShinde18/CodeTogether" class="projects__button" target="_blank" rel="noreferrer">
                                 <span>Github</span>
                                 <i class="uil uil-github-alt"></i>
