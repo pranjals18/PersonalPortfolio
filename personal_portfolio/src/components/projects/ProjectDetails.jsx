@@ -15,10 +15,6 @@ const ProjectDetails = () => {
     return (
         <div className="projects__container container grid">
 
-
-
-            {/* ----------------------------------------------------- Projects ----------------------------------------------------- */}
-
             <div className="projects__content">
                 <div>
                     <img className='project-img' src={codeorbit_img} alt="" />
@@ -66,11 +62,11 @@ const ProjectDetails = () => {
 
                         </ul>
                         <div class="projects__buttons">
-                            <a href="https://codeorbit.vercel.app/" class="projects__button" target="_blank">
+                            <a href="https://codeorbit.vercel.app/" class="projects__button" target="_blank" rel="noreferrer">
                                 <span>Demo</span>
                                 <i class="uil uil-link"></i>
                             </a>
-                            <a href="https://github.com/PranjalShinde18/CodeTogether" class="projects__button" target="_blank">
+                            <a href="https://github.com/PranjalShinde18/CodeTogether" class="projects__button" target="_blank" rel="noreferrer">
                                 <span>Github</span>
                                 <i class="uil uil-github-alt"></i>
                             </a>
@@ -134,11 +130,11 @@ const ProjectDetails = () => {
 
                         </ul>
                         <div class="projects__buttons">
-                            <a href="https://pizzamania1809.vercel.app/" class="projects__button" target="_blank">
+                            <a href="https://pizzamania1809.vercel.app/" class="projects__button" target="_blank" rel="noreferrer">
                                 <span>Demo</span>
                                 <i class="uil uil-link"></i>
                             </a>
-                            <a href="https://github.com/PranjalShinde18/Pizza-Mania" class="projects__button" target="_blank">
+                            <a href="https://github.com/PranjalShinde18/Pizza-Mania" class="projects__button" target="_blank" rel="noreferrer">
                                 <span>Github</span>
                                 <i class="uil uil-github-alt"></i>
                             </a>
@@ -199,11 +195,11 @@ const ProjectDetails = () => {
 
                         </ul>
                         <div class="projects__buttons">
-                            <a href="https://cripinfo1809.vercel.app/" class="projects__button" target="_blank">
+                            <a href="https://cripinfo1809.vercel.app/" class="projects__button" target="_blank" rel="noreferrer">
                                 <span>Demo</span>
                                 <i class="uil uil-link"></i>
                             </a>
-                            <a href="https://github.com/PranjalShinde18/CrypInfo-Crypto-Currency-Information-Application" class="projects__button" target="_blank">
+                            <a href="https://github.com/PranjalShinde18/CrypInfo-Crypto-Currency-Information-Application" class="projects__button" target="_blank" rel="noreferrer">
                                 <span>Github</span>
                                 <i class="uil uil-github-alt"></i>
                             </a>
@@ -265,7 +261,7 @@ const ProjectDetails = () => {
                         </ul>
 
                         <div class="projects__buttons">
-                            <a href="https://github.com/PranjalShinde18/Alumni_Net-App" class="projects__button" target="_blank">
+                            <a href="https://github.com/PranjalShinde18/Alumni_Net-App" class="projects__button" target="_blank" rel="noreferrer">
                                 <span>Github</span>
                                 <i class="uil uil-github-alt"></i>
                             </a>
