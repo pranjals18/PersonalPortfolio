@@ -1,7 +1,6 @@
 import React from 'react'
 import './about.css'
 import AboutImg from '../../assets/about.png'
-import CV from '../../assets/Pranjal Shinde.pdf'
 import Info from './Info'
 import Education from './Education'
 
