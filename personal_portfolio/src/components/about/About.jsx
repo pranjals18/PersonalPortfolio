@@ -21,9 +21,9 @@ const About = () => {
 
           <p className="about__description">An enthusiastic learner with a strong foundation in software development. My aim is to harness my academic insights and coding to make impactful contributions within the vibrant realm of web technologies.</p>
 
-          <a download="" href={CV} className="button button--flex">
+          <a href={"https://drive.google.com/file/d/1HflSlg61tAduTNKKMUBBMjiRwj-ZpBbm/view?usp=drive_link"} className="button button--flex" target='_blank'  rel="noreferrer">
 
-            Download CV
+            View CV
 
             <svg
               class="button__icon"
