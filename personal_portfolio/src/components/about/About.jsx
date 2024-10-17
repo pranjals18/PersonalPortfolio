@@ -20,7 +20,7 @@ const About = () => {
 
           <p className="about__description">An enthusiastic learner with a strong foundation in software development. My aim is to harness my academic insights and coding to make impactful contributions within the vibrant realm of web technologies.</p>
 
-          <a href={"https://drive.google.com/file/d/12CPiw0fQ5jnrnO5NNV548TcqWrQcdeMw/view"} className="button button--flex" target='_blank' rel="noreferrer" >
+          <a href={" https://drive.google.com/file/d/1ImshgCwGF_royIJLL9UGzz5_n9Ap7CRn/view"} className="button button--flex" target='_blank' rel="noreferrer" >
 
             View CV
 
