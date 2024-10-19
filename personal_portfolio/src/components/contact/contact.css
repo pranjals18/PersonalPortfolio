@@ -1,128 +1,104 @@
-.contact__container {
-  min-height: 90vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+/* contact.css */
 
 .contact__section {
-  background-color: var(--body-color);
-  width: 100%;
-  height: 100%;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  padding-left: 10%;
+  gap: 20px;
 }
 
-.contact__form {
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Main heading styles */
+.contact__heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Button container styles */
+.contact__button-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100%;
+  align-items: center;
+  width: 100%;
 }
 
-.contact__form-heading {
-  text-align: center;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  margin: 2rem;
-}
-
-.contact__form-input,
-.contact__form-button {
-  padding: 0.8rem;
-  width: 40%;
-  outline: none;
-  margin: 1rem;
-  border: none;
-}
-
-.contact__form-input {
-  border-radius: 8px;
-}
-
-.contact__form-button {
-  cursor: pointer;
+/* Button styles */
+.contact__button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
   background-color: var(--title-color);
-  color: var(--container-color);
-  text-transform: uppercase;
-  margin: 3rem;
+  color: white;
+  border: none;
   border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Add space above the button */
 }
 
-.contact__form-button:hover {
+/* Button hover effect */
+.contact__button:hover {
   background-color: var(--title-color-dark);
 }
 
+/* Aside styles for the image */
 .contact__aside {
-  width: 100%;
-  height: 100%;
-  background-color: var(--text-color);
-  display: grid;
-  place-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Image styles */
 .contact__aside-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  background-color: white;
-  /* animation: upupdowndown 0.7s infinite linear alternate; */
+  max-width: 50%; /* Ensure the image does not exceed 50% of the width */
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain; /* Keeps the image aspect ratio */
 }
 
-.disableBtn {
-  cursor: not-allowed;
+/* Main section styles */
+.contact__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Stack heading and button vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
 }
 
-@media (max-width: 992px) {
-  .contact__container {
-    grid-template-columns: 1fr;
-  }
-
-  .contact__form-input,
-  .contact__form-button {
-    width: 50%;
-  }
-}
-
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .contact__form-heading {
-    font-size: 1.5rem;
-    margin: 1.5rem;
+  .contact__section {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    padding: 20px;
   }
 
-  .contact__form-input,
-  .contact__form-button {
-    width: 60%;
+  .contact__aside {
+    margin-bottom: 20px; /* Add space below the image */
   }
 
-  .contact__form-button {
-    margin: 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .contact__form-input,
-  .contact__form-button {
-    width: 70%;
+  .contact__aside-img {
+    max-width: 80%; /* Allow the image to take up more space on smaller screens */
   }
 
-  .contact__form-heading {
-    font-size: 1.2rem;
-    margin: 1rem;
-  }
-}
-
-@media (max-width: 350px) {
-  .contact__form-heading {
-    font-size: 1rem;
-    margin: 0.5rem;
+  .contact__heading {
+    font-size: 1.5rem; /* Adjust heading size for mobile */
   }
 
-  .contact__form-input,
-  .contact__form-button {
-    width: 80%;
-    padding: 0.6rem;
-  }
-
-  .contact__form-button {
-    margin: 1.5rem;
+  .contact__button {
+    font-size: 1rem; /* Adjust button size for mobile */
+    padding: 10px 20px; /* Adjust padding for mobile */
   }
 }
