@@ -148,7 +148,7 @@ const Contact = () => {
         <section className="contact__section">
           <motion.div {...animations.button} className="contact__button-container">
             <h2 className="contact__heading">Contact Me</h2>
-            <a href="mailto:xyz@gmail.com" className="contact__button">
+            <a href="mailto:pranjalshinde.dev@gmail.com" className="contact__button">
               Mail Me
             </a>
           </motion.div>
