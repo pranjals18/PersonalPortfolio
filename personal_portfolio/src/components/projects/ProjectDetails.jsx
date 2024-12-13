@@ -312,7 +312,7 @@ const ProjectDetails = () => {
 
       {/* ---------------------------------------- Code Orbit ---------------------------------------- */}
 
-      {/* <div className="projects__content">
+      <div className="projects__content">
         <div>
           <img className="project-img" src={codeorbit_img} alt="" />
           <h3 className="projects__title">Code Orbit</h3>
@@ -396,11 +396,11 @@ const ProjectDetails = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* ---------------------------------------- Alumnet ---------------------------------------- */}
 
-      {/* <div className="projects__content">
+      <div className="projects__content">
         <div>
           <img className="project-img" src={alumnet_img} alt="" />
           <h3 className="projects__title">Alumnet</h3>
@@ -481,7 +481,7 @@ const ProjectDetails = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
 
     </div>
